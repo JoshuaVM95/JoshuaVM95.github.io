@@ -22,13 +22,13 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
+          echo "${{ secrets.PRIVATE_KEY }}" > ./id_ed25519
+          eval $(ssh-agent -s)
+          ssh-add ./id_ed25519
           cd build
-          echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           git init
           git config user.name github-actions
           git config user.email github-actions@github.com
-          eval $(ssh-agent -s)
-          ssh-add ~/.ssh/id_ed25519
           git remote add origin git@github.com:JoshuaVM95/JoshuaVM95.github.io.git
           git branch -M github-pages
           git add .
