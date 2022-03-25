@@ -22,6 +22,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
+          mkdir ~/.ssh
           echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           eval $(ssh-agent -s)
           ssh-add ~/.ssh/id_ed25519
@@ -34,3 +35,5 @@ jobs:
           git add .
           git commit -m "Deploy"
           git push -u origin github-pages
+          rm ~/.ssh/id_ed25519
+          rmdir ~/.ssh
