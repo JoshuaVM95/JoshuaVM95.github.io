@@ -1,0 +1,14 @@
+#!/bin/bash
+
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+master_branch='master'
+
+policy_master="\n\n[Policy] Never push code directly to "$master_branch"!!! This is our GitHub Pages branch"
+
+if [ $current_branch = $master_branch ]; then
+  echo -e $policy_master
+  exit 1
+fi
+
+exit 0
