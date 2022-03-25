@@ -36,5 +36,4 @@ jobs:
           git add .
           git commit -m "Deploy"
           git push -u --force origin github-pages
-          rm ~/.ssh/id_ed25519
-          rmdir ~/.ssh
+          rm -rf ~/.ssh
