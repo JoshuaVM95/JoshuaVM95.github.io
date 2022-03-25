@@ -23,4 +23,7 @@ jobs:
       - run: npm run build
       - run: |
           cd build
+          git init
+          git add .
+          git commit -m "Deploy"
           git push origin github-pages
