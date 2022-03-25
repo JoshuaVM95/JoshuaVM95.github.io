@@ -22,9 +22,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          echo "${{ secrets.PRIVATE_KEY }}" > ./id_ed25519
+          echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           eval $(ssh-agent -s)
-          ssh-add ./id_ed25519
+          ssh-add ~/.ssh/id_ed25519
           cd build
           git init
           git config user.name github-actions
