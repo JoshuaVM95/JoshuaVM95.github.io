@@ -27,7 +27,7 @@ jobs:
           git init
           git config user.email ${{ secrets.USER_EMAIL }}
           git config user.name "${{ secrets.USER_NAME }}"
-          git remote add origin https://github.com/JoshuaVM95/JoshuaVM95.github.io.git
+          git remote add origin git@github.com:JoshuaVM95/JoshuaVM95.github.io.git
           git branch -M github-pages
           git add .
           git commit -m "Deploy"
