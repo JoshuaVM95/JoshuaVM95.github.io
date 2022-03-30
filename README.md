@@ -1,4 +1,4 @@
-# :computer: JoshuaVM95 Personal Website
+# :computer: JoshuaVM95 Personal Website [![Deploy GitHub Pages](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/push.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/push.yml) [![CI Workflow](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml)
 
 This is my personal website built with React **[JoshuaVM95](https://JoshuaVM95.github.io)**.
 

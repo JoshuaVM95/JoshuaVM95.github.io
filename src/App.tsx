@@ -1,21 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styled from "styled-components";
+import NavBar from "components/NavBar/NavBar";
+import About from "views/About";
 
-function App() {
+const StyledApp = styled.main`
+	width: calc(100vw - 8rem);
+	background-color: #333;
+	color: #fff;
+	padding: 5rem 4rem 0 4rem;
+`;
+
+const App = (): React.ReactElement => {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
+		<StyledApp>
+			<NavBar />
+			<About />
+		</StyledApp>
 	);
-}
+};
 
 export default App;

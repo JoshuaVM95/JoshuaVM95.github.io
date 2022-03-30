@@ -1,0 +1,12 @@
+CI/CD:
+  - ".github/**"
+
+dependencies:
+  - "package-lock.json"
+  - "package.json"
+
+documentation:
+  - "*.md"
+
+enhancement:
+  - "src/**/*"
