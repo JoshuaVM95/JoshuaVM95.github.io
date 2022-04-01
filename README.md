@@ -1,4 +1,6 @@
-# :computer: JoshuaVM95 Personal Website [![Deploy GitHub Pages](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/push.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/push.yml) [![CI Workflow](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml)
+# :computer: JoshuaVM95 Personal Website
+
+[![CI Workflow](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pull_request.yml) [![Push to GitHub Pages](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/gh-pages-push.yml/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/gh-pages-push.yml) [![pages-build-deployment](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JoshuaVM95/JoshuaVM95.github.io/actions/workflows/pages/pages-build-deployment)
 
 This is my personal website built with React **[JoshuaVM95](https://JoshuaVM95.github.io)**.
 
