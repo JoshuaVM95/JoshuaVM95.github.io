@@ -4,6 +4,9 @@ on:
   push:
     branches: [master]
 
+env:
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
 jobs:
   gh-pages-push:
     runs-on: ubuntu-latest

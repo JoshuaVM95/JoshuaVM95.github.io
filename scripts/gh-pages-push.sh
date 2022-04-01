@@ -1,5 +1,5 @@
 mkdir ~/.ssh
-echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+echo "$PRIVATE_KEY" > ~/.ssh/id_ed25519
 sudo chmod 600 ~/.ssh/id_ed25519
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_ed25519
