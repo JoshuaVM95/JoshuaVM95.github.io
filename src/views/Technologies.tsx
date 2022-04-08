@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Card from "components/Card/Card";
 import Icon, { iconType } from "components/Icon/Icon";
-import { frontEndStack, backEndStack } from "constants/technologies.constants";
+import { technologies } from "constants/technologies.constants";
 
 interface AnimatedStyledComponentProps {
 	isTechnologiesVisible: boolean;
@@ -118,34 +118,22 @@ const Technologies = (): React.ReactElement => {
 				Most Used Technologies
 			</StyledTitle>
 			<StyledCards>
-				<StyledCard title="Frontend" isTechnologiesVisible={isTechnologiesVisible}>
-					<StyledUnorderedList>
-						{frontEndStack.map((technology) => (
-							<StyledListItem key={technology}>
-								<Icon
-									icon={`${technology.replace(/\s/g, "")}Icon` as iconType}
-									color="#fff"
-									size="lg"
-								/>
-								{technology}
-							</StyledListItem>
-						))}
-					</StyledUnorderedList>
-				</StyledCard>
-				<StyledCard title="Backend" description="" isTechnologiesVisible={isTechnologiesVisible}>
-					<StyledUnorderedList>
-						{backEndStack.map((technology) => (
-							<StyledListItem key={technology}>
-								<Icon
-									icon={`${technology.replace(/\s/g, "")}Icon` as iconType}
-									color="#fff"
-									size="lg"
-								/>
-								{technology}
-							</StyledListItem>
-						))}
-					</StyledUnorderedList>
-				</StyledCard>
+				{technologies.map(({ title, stack }) => (
+					<StyledCard title={title} isTechnologiesVisible={isTechnologiesVisible}>
+						<StyledUnorderedList>
+							{stack.map((technology) => (
+								<StyledListItem key={technology}>
+									<Icon
+										icon={`${technology.replace(/\s/g, "")}Icon` as iconType}
+										color="#fff"
+										size="lg"
+									/>
+									{technology}
+								</StyledListItem>
+							))}
+						</StyledUnorderedList>
+					</StyledCard>
+				))}
 			</StyledCards>
 		</StyledTechnologies>
 	);

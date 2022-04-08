@@ -2,4 +2,15 @@ const frontEndStack = ["React", "React Router", "Redux", "Styled Components", "T
 
 const backEndStack = ["NodeJS", "GraphQL", "MySQL", "Apollo GraphQL", "Prisma"];
 
-export { frontEndStack, backEndStack };
+const technologies = [
+	{
+		title: "Front End",
+		stack: frontEndStack
+	},
+	{
+		title: "Back End",
+		stack: backEndStack
+	}
+];
+
+export { frontEndStack, backEndStack, technologies };
