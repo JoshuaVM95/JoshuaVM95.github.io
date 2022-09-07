@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c33d3529.css",
+    "main.js": "/static/js/main.6a738253.js",
+    "static/js/787.8f3de90b.chunk.js": "/static/js/787.8f3de90b.chunk.js",
+    "static/media/mysql.svg": "/static/media/mysql.1957fab3610b78c02010dab864c2d6b8.svg",
+    "static/media/react.svg": "/static/media/react.8e63d418a6421cc2662e234ac8af7313.svg",
+    "static/media/styledcomponents.svg": "/static/media/styledcomponents.cd1aef9abdc7ee8bc7d755a201ef05fb.svg",
+    "static/media/nodedotjs.svg": "/static/media/nodedotjs.6d0ce605479079334bce77dc7c3be9ab.svg",
+    "static/media/redux.svg": "/static/media/redux.a80e92c35427b6aed81fcc8f1dc285f7.svg",
+    "static/media/typescript.svg": "/static/media/typescript.1b46c028879d6c94a56e6dfc1fd6797b.svg",
+    "static/media/reactrouter.svg": "/static/media/reactrouter.5204321b1168693fc06a46d51b1cbbb6.svg",
+    "index.html": "/index.html",
+    "static/media/apollographql.svg": "/static/media/apollographql.cf28f2ccc7a3fa442e5d1dc86ffc98ce.svg",
+    "static/media/graphql.svg": "/static/media/graphql.1013b0b1c0bfa806d1b610ed7a83970a.svg",
+    "static/media/prisma.svg": "/static/media/prisma.d96dde3313dc88a539d49358400ab8dd.svg",
+    "main.c33d3529.css.map": "/static/css/main.c33d3529.css.map",
+    "main.6a738253.js.map": "/static/js/main.6a738253.js.map",
+    "787.8f3de90b.chunk.js.map": "/static/js/787.8f3de90b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c33d3529.css",
+    "static/js/main.6a738253.js"
+  ]
+}
